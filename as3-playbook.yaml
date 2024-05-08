@@ -26,7 +26,7 @@
     
     - name: DEBUG OUTPUT
       debug:
-        msg: "Result of output {{ as3_output }}"
+        msg: "Result of output {{ as3_output | to_json(indent=4, sort_keys=True) }}"
   
 
 ...

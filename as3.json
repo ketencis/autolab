@@ -43,21 +43,6 @@
                         "10.0.4.12"
                     ],
                     "pool": {"bigip": "/Common/Shared/poolRoundRobin"}
-                },
-                "web_pool": {
-                    "class": "Pool",
-                    "monitors": [
-                        "http"
-                    ],
-                    "members": [
-                        {
-                            "servicePort": 80,
-                            "serverAddresses": [
-                                "10.0.4.101",
-                                "10.0.4.103"
-                            ]
-                        }
-                    ]
                 }
             }
         }
